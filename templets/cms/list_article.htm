@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<TITLE>{dede:field.seotitle/}_{dede:global.cfg_webname/}</TITLE>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/style/css/style.css" />
+<script type="text/javascript" src="/style/js/jquery.1.5.js"></script>
+<script type="text/javascript">
+    var mobileUrl="{dede:global.cfg_wap/}",
+        mobile = (/mmp|symbian|smartphone|midp|wap|phone|xoom|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        window.location = mobileUrl;
+    }
+</script>
+<SCRIPT language=javascript> 
+<!-- 
+window.onerror=function(){return true;} 
+// --> 
+</SCRIPT>
+<!--[if IE 6]><script src="/style/js/iepng.js" type="text/javascript"></script><script type="text/javascript">EvPNG.fix('div, ul, img, li, input');</script><![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="list_page w">
+  <div class="g_pos clearfix">
+    <div class="site fl fc_999">当前位置：{dede:field name='position'/}</div>
+  </div>
+  <div class="w680 fl">
+    <div class="list_page_tops g_pics mb20 clearfix"> 
+    {dede:arclist row='1' flag='p' titlelen='40' infolen='110'} <a class="top_img item fl w340" href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" height="222" width="340" alt="[field:fulltitle/]" /><span class="t hidtit_2 fs_18 ftc fa_yhei" title="[field:fulltitle/]">[field:title/]</span></a>
+    {/dede:arclist}
+      <ul class="top_txt g_list fs_14 fr w300">
+        {dede:arclist row='1' flag='c' titlelen='30'}
+        <h4 class="mb fs_18 fa_yhei ftc"><a class="fc_36a" href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></h4>
+        {/dede:arclist}
+        {dede:arclist row='8' titlelen='40'}
+        <li class="item"><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="arc_h g_picarc mb20 g_tab">
+      <div class="tab_menu mb clearfix">
+        <h2 class="fa_yhei menu_item fl menu_item_hover">{dede:field.title/}列表</h2>
+      </div>
+    </div>
+    <div class="main g_picarc"> 
+    {dede:list pagesize='15' infolen='210'}
+      [field:array runphp='yes']if(empty(@me["litpic"]) || preg_match('/defaultpic/', @me["litpic"])){@me = '
+      <div class="item item_txt">
+        <div class="text">
+          <div class="fa_yhei fs_18 t fw"><a href="'.@me["arcurl"].'">'.@me["fulltitle"].'</a></div>
+          <p class="attrs"><span class="date fc_999">'.GetDateTimeMK(@me["pubdate"]).'</span></p>
+          <p class="infos fc_666 fs_14">'.@me["infos"].' ... <a class="fc_orange" href="'.@me["arcurl"].'" title="'.@me["fulltitle"].'">[详细]</a></p>
+        </div>
+      </div>';}else{@me = '<div class="item item_img"><a class="img" href="'.@me["arcurl"].'"><img class="lazy" src="'.@me["litpic"].'" width="120" height="90" alt="'.@me["fulltitle"].'" /></a>
+        <div class="text">
+          <div class="fa_yhei fs_18 t fw"><a href="'.@me["arcurl"].'">'.@me["fulltitle"].'</a></div>
+          <p class="attrs"><span class="date fc_999">'.GetDateTimeMK(@me["pubdate"]).'</span></p>
+          <p class="infos fc_666 fs_14">'.@me["infos"].' ... <a class="fc_orange" href="'.@me["arcurl"].'" title="'.@me["fulltitle"].'">[详细]</a></p>
+        </div>
+      </div>';}[/field:array]
+      {/dede:list} 
+    </div>
+    <div class="g_pages">{dede:pagelist listitem="index,end,pre,next,pageno" listsize="3"/}</div>
+  </div>
+  {dede:include filename="right.htm"/}
+</div>
+{dede:include filename="foot.htm"/}
+ 
+ 
+</body>
+</html>

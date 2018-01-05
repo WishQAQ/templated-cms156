@@ -1,0 +1,111 @@
+
+ 
+/*---------- base ---------*/
+*{padding:0px;margin:0px;}
+html{background:#FFF;}
+body{font:100%/1.6em Microsoft YaHei,Helvetica, Arial, sans-serif; background:#FAFAFA}
+img{border:none;max-width: 100%; margin:0 auto}
+a{color:#333333;text-decoration:none;}
+a:hover{color:#DD121F; text-decoration:none}
+ul,li{list-style:none;}
+input,select,button{vertical-align:middle;}
+h1{ font-size:1.25em; font-weight:bold; text-align:center; line-height:1.2em; padding:5% 0}
+h2{ font-size:1.15em; font-weight:normal; line-height:40px; white-space:nowrap; overflow:hidden}
+h3{ background:url(images/bgs.png) repeat-x; height:1.7em; line-height:1.7em; font-weight: normal;text-indent:1%; font-size:1.2em; color:#ffffff}
+h3 a,h3 a:visited{ font-size:1em; color:#ffffff}
+.fullwidth{width:100%}
+.fl{ float:left}
+.fr{ float:right}
+.mt1{margin-top:0.5em;}
+.pd10{ padding:0 1%;}
+.clear{overflow:hidden;}
+.fc-f60{color:#F60;}
+.fc-f90{color:#F90;}
+.clr{clear:both;}
+.clearfix{ clear:both; height:1px}
+
+@font-face{font-family:'Glyphicons Halflings';src:url('/wap/fonts/glyphicons-halflings-regular.eot');src:url('/wap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('/wap/fonts/glyphicons-halflings-regular.woff') format('woff'),url('/wap/fonts/glyphicons-halflings-regular.ttf') format('truetype'),url('/wap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg')}
+.glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';-webkit-font-smoothing:antialiased;font-style:normal;font-weight:normal;line-height:1;-moz-osx-font-smoothing:grayscale}
+.glyphicon:empty{width:1em}
+.glyphicon-align-justify:before{content:"\e055"}
+
+#page_head{height:40px;border-bottom:1px solid #e6eaed; background:#FFF}
+.box{width:100%; height:inherit;position:relative;}
+#logo{float:left;margin-top:2px; padding-left:1%}
+#logo a img{height:32px;width:auto;}
+#logo_right{float:right;}
+#logo_right a{float:right;font-size:24px;color:#747f8c;display:inline-block;margin-top:6px;margin-right:5px;}
+#page_head_box_nav{display:none;border-bottom:1px solid #e6eaed;-moz-box-shadow:0 0 1px #ccc;box-shadow:0 0 1px #ccc;}
+.nav-menu{padding:0.6em; background:#FFF}
+.menu-item{float:left;width:23%;margin:0.3em 1%;padding:0.3em 0;line-height:1.2em;font-size:0.8em;text-align:left;}
+
+ 
+
+.flexslider .slides li {display: none;}
+.flexslider .slides img {width: 100%; display: block;}
+.flexslider {background: #fff; position: relative;z-index: 1;}
+.flexslider .slides  li {position: relative;}
+.flexslider-container {position: relative;}
+.flex-caption {width: 96%; padding: 2%; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 15px; line-height: 18px;}
+.flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; display:none}
+.flex-direction-nav li a.next {background-position: -52px 0; right: -21px;}
+.flex-direction-nav li a.prev {background-position: 0 0; left: -21px;}
+.flex-control-nav { position: absolute; bottom: 5%; right:5%;} 
+.flex-control-nav li {margin: 0 0 0 5px; float: left;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; background: url(images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+ 
+.wrapper{width: 99%;margin:0 auto;}
+.hotfoucs{ clear:both; background:#f5f5f5}
+.hotfoucs img{ width:35%; margin-right:2%; display:block}
+.hotfoucs p{ color:#666666; line-height:1.32em; font-size:1.1em}
+ 
+
+.sublist{ background:#f8f8f8; margin:1%; padding:1%; font-size:1em;}
+.sublist a{ background:#BA2636; color:#ffffff; padding:0 5px}
+.list1 li{border-bottom: 1px solid #E4E4E4;line-height: 2.3em; font-size:1.0em }
+.list1 li a{font-size:1.0em; }
+.list1 li span{ color:#888888;  font-size:0.8em; }
+.list2{}
+.list2 li{ float:left; width:33.1%; margin:2% 0;}
+.list2 li a{display: block; text-align:center; margin:0 auto; width:90%; overflow:hidden; white-space:nowrap; position:relative;}
+.list2 li span{ position:absolute;background: rgba(0,0,0,.6); color: #fff; height:1.5em; line-height:1.5em; font-size:0.8em; width:100%; left:0; bottom:0; padding:0 2%}
+.list2 li img{ display:block; width:100%; max-height:100px; }
+
+.pagelistbox{ padding:0 1%; margin:2% 0;clear:both}
+.pagelistbox a,.pagelistbox strong{ border:1px solid #dddddd; padding:0 5px; height:1.56em; margin-right:1%; display: inline-block}
+.pagelistbox strong{ background:#2A2A2A; border:1px solid #256EB1; color:#ffffff}
+.pagelistbox a:visited{ color:#256EB1}
+
+article .content{ color:#555555; background:#fefefe}
+article .info{ border-bottom:1px dotted #cccccc; color:#666666; background:#f6f6f6; font-size:0.8em; padding:0.2em}
+article .content{ padding:5% 0; text-indent:2em}
+article .content img{ display:block}
+article .content .tags{ text-align:left; font-size:0.8em;}
+
+.backlist{ height:2em; line-height:2em; text-align:center; font-size:1em; background:#f3f3f3}
+.backlist a{ color:#ff0000}
+
+/*µ×²¿*/
+.footer{background:#404A54;text-align:center;color:#525252; padding:2% 1%; clear:both}
+.footer p{font-size:0.8em; color:#C8C8C8}
+.foot_nav a{color:#C8C8C8; font-size:0.8em;}
+.foot_nav li.menu-item{color:#C8C8C8; font-size:0.8em;}
+.foot_nav li.menu-item a{color:#C8C8C8;padding:0 2%; font-size:1.0em;}
+.foot_nav li.menu-item a.hover{color:#fff;}
+ 
+
+.news_list { clear:both; padding:0 5px}
+.news_list .news_item {position:relative; border-bottom:#dedede 1px dotted; height:63px;overflow:hidden;padding:10px 0}
+.news_list .news_item img.avator75 {width:75px;height:60px;position:absolute;top:11px;left:0px;}
+.news_list .news_detail {min-height: 63px;padding-left: 82px;position: relative;}
+.news_list .news_detail span {color: #121212;font-size: 16px;font-weight: normal;line-height: 21px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.news_list .news_detail p {margin-top:2px;color:#9d9d9d;line-height:20px;font-size:12px}
+.news_list .news_detail span.pl_pos {position:absolute;right:0px;bottom:1px;font-size:12px;font-family:Arial, 'Î¢ÈíÑÅºÚ';color:#CCC}
+
+/************·µ»Ø¶¥²¿*************/
+#goTopBtn{position:fixed;text-align:center;line-height:30px;width:30px;height:30px;bottom:10px;cursor:pointer;right:10px;_position:absolute;_right:auto;}
+@media (max-width:320px){}

@@ -1,0 +1,9 @@
+INSERT INTO `dede_search_keywords` VALUES('1','请输入关键词 如：仿站视频','请输入关键词 如：仿站视频 仿站 关键词 视频 输入','1','0','1378453514','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','大爷','大爷','1','0','1379861017','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','织梦','织梦','15','35','1415932028','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','′óòˉ','′óòˉ','1','0','1379862817','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5',' ˉ',' ˉ','1','0','1379862823','0','0');
+INSERT INTO `dede_search_keywords` VALUES('6','as','as','5','0','1415849486','0','0');
+INSERT INTO `dede_search_keywords` VALUES('7','的','的','11','15','1413795710','0','0');
+INSERT INTO `dede_search_keywords` VALUES('8',' ede',' ede','1','18','1413780142','0','0');
+INSERT INTO `dede_search_keywords` VALUES('9','xxx','xxx','2','0','1415849486','0','0');

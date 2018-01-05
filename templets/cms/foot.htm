@@ -1,0 +1,66 @@
+<div class="clear"></div>
+<div class="bo">
+  <div class="bq">
+   <a href="/">首页</a>
+   {dede:channel type='top' row='10'}
+    - <a href="[field:typelink/]">[field:typename/]</a>
+   {/dede:channel}
+  </div>
+  <div class="bq"> <a href="{dede:global name='cfg_basehost'/}" target="_blank">电脑版</a> | <a href="{dede:global name='cfg_wap'/}" target="_blank">移动端</a> </div>
+  <div class="bq">{dede:global name='cfg_powerby'/} {dede:global name='cfg_beian'/}  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+	//排行
+	$('.g_rank .item').hover(function(){
+		$(this).addClass('hover').siblings().removeClass('hover');
+		$(this).find('img').attr('src', $(this).find('img').attr('data-src'));
+	});
+	$('.g_rank').each(function(index, element) {
+		$(this).find('.item').eq(0).trigger('mouseleave');
+	});
+	//选项卡
+	$('.g_tab').each(function(index, element) {
+		var tabp = $(this);
+		$(this).find('.menu_item').mouseenter(function(){
+			$(this).addClass('menu_item_hover').siblings().removeClass('menu_item_hover');
+			tabp.find('.tab_cont>div').eq($(this).index()).show().siblings().hide();
+		});
+	});
+	//导航hover
+	$('.g_header .hover').length < 1 && $('.g_header .item').eq(0).addClass('hover');
+	//关闭变现广告
+	var closeadNum = 0;
+	$('#otherpics').delegate('.btn_close', 'click', function(){
+		if(closeadNum == 1){
+			$(this).parent().hide();
+		}else{
+			window.open($(this).parent().find('a:first').attr('href'));
+		}
+		closeadNum ++;
+	});
+
+});
+</script>
+<p id="back-to-top"><a href="#top"><span></span>返回顶部</a></p>
+<script>
+$(function(){
+//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+$(function () {
+$(window).scroll(function(){
+if ($(window).scrollTop()>300){
+$("#back-to-top").fadeIn(1500);
+}
+else
+{
+$("#back-to-top").fadeOut(1500);
+}
+});
+//当点击跳转链接后，回到页面顶部位置
+$("#back-to-top").click(function(){
+$('body,html').animate({scrollTop:0},1000);
+return false;
+});
+});
+});
+</script>

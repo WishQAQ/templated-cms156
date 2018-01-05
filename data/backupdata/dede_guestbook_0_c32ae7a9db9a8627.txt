@@ -1,0 +1,4 @@
+INSERT INTO `dede_guestbook` VALUES('1','adfadfadfadf','0','1','0','admin','','','','01','220.180.121.35','1311582890','1','adfadfadfadfadfa');
+INSERT INTO `dede_guestbook` VALUES('4','adfadfadfadfdf','0','0','0','dfsfsfa','','','','01','220.180.121.35','1311583484','1','dsfad');
+INSERT INTO `dede_guestbook` VALUES('3','admin','0','1','0','bcd','','','','01','220.180.121.35','1311583123','1','adfadfadfad');
+INSERT INTO `dede_guestbook` VALUES('5','gewrgg','0','0','1320812462','rgwegew','gew','ewge','gewg','01','127.0.0.1','1314708240','1','<div class=\'rebox\'>geg</div>\n<p>\r\n	<font color=\"red\">fewf</font></p>');

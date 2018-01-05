@@ -1,0 +1,6 @@
+INSERT INTO `dede_member_space` VALUES('9','10','0','国产达人的空间','','person','','');
+INSERT INTO `dede_member_space` VALUES('2','10','0','zhongyuedu的空间','','person','专注化妆摄影，美容美发学术研究，安徽合肥中誉职业培训学校。','');
+INSERT INTO `dede_member_space` VALUES('4','10','0','ahzyjypx的空间','','person','我的地盘，我说的算！','');
+INSERT INTO `dede_member_space` VALUES('6','10','0','huxiu的空间','','person','','');
+INSERT INTO `dede_member_space` VALUES('7','10','0','wanghuan的空间','/uploads/userup/7/mylogo.png','lxvista','我的地盘，必须听我的！','我的地盘，必须听我的！');
+INSERT INTO `dede_member_space` VALUES('8','10','0','网络一人的空间','','person','网络一人','');

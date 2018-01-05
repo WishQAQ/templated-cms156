@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<TITLE>搜索页_{dede:global.cfg_webname/}</TITLE>
+<META content="{dede:field name='keywords'/}" name=keywords>
+<META content="{dede:field name='description' function='html2text(@me)'/}" name=description>
+<link rel="stylesheet" type="text/css" href="/style/css/style.css" />
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="list_page w">
+  <div class="g_pos clearfix">
+    <div class="site fl fc_999">搜索：<font color="#FF0000">{dede:global name='keyword' function='RemoveXSS(@me)'/}</font>  的结果</div>
+  </div>
+  <div class="w680 fl">
+    <div class="list_page_tops g_pics mb20 clearfix"> 
+    {dede:arclist row='1' flag='p' titlelen='60' infolen='110'} <a class="top_img item fl w340" href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" height="222" width="340" alt="[field:fulltitle/]" /><span class="t hidtit_2 fs_18 ftc fa_yhei" title="[field:fulltitle/]">[field:title/]</span></a>
+    {/dede:arclist}
+      <ul class="top_txt g_list fs_14 fr w300">
+        {dede:arclist row='1' flag='c' titlelen='40'}
+        <h4 class="mb fs_18 fa_yhei ftc"><a class="fc_36a" href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></h4>
+        {/dede:arclist}
+        {dede:arclist row='8' titlelen='60'}
+        <li class="item"><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="arc_h g_picarc mb20 g_tab">
+      <div class="tab_menu mb clearfix">
+        <h2 class="fa_yhei menu_item fl menu_item_hover">搜索结果</h2>
+      </div>
+    </div>
+    <div class="main g_picarc"> 
+    {dede:list pagesize='15' infolen='210'}
+      <div class="item item_txt">
+        <div class="text">
+          <div class="fa_yhei fs_18 t fw"><a href="[field:arcurl/]" title="[field:title /]">[field:title /]</a></div>
+          <p class="attrs"><span class="date fc_999">[field:pubdate function="GetDateMK(@me)"/]</span></p>
+          <p class="infos fc_666 fs_14">[field:description function="cn_substr(@me,220)"/]... <a class="fc_orange" href="[field:arcurl/]" title="[field:title /]">[详细]</a></p>
+        </div>
+      </div>
+      {/dede:list} 
+    </div>
+    <div>{dede:pagelist listitem="index,end,pre,pageno" listsize="3"/}</div>
+  </div>
+  {dede:include filename="right.htm"/}
+</div>
+{dede:include filename="foot.htm"/}
+ 
+ 
+</body>
+</html>

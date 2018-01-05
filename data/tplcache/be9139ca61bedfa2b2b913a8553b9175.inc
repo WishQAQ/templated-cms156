@@ -1,0 +1,1 @@
+<a class="img img_tit fl" href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" height="165" width="220" alt="[field:fulltitle/]" /><span class="t hidtit_2">[field:title/]</span></a>

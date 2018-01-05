@@ -1,0 +1,1 @@
+<h4 class="h fs_18 mb fa_yhei"><a class="fc_36a" href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></h4>

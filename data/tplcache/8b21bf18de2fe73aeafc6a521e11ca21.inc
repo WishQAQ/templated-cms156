@@ -1,0 +1,1 @@
+<li class="item[field:global.autoindex runphp='yes']@me = @me==6 ? ' beitem' : '';[/field:global.autoindex]"><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>

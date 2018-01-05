@@ -1,0 +1,1 @@
+<a class="item fl" href="[field:arcurl/]" title="[field:fulltitle/]"><img class="lazy" src="[field:litpic/]"  height="188" width="158" alt="[field:fulltitle/]" /><span class="t hidtit_2" title="[field:fulltitle/]">[field:title/]</span></a>

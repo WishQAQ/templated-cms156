@@ -1,0 +1,54 @@
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<SCRIPT language=javascript type=text/javascript>
+
+<!--
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+<div class="top">
+  <div class="topc">
+    <h1>Õ¾ÎÑÎÑ£¡»¶Ó­Äú£¡</h1>
+    <div class="login"  id="_userlogin">
+      <form name="userlogin" action="/member/index_do.php" method="POST">
+        <a href="/member/index_do.php?fmdo=user&dopost=regnew">×¢²á</a> | <a href="/member/login.php" data-toggle="modal">µÇÂ¼</a>
+      </form>
+      <script language="javascript" type="text/javascript">CheckLogin();</script>
+    </div>
+  </div>
+</div>
+<div class="tip">
+  <h2><a href="/" title="{dede:global.cfg_webname/} "><img src="/style/images/logo.png" alt="{dede:global.cfg_webname/}"/></a></h2>
+  <div class="sub_logo">
+    <p>Õ¾³¤ÓÊÏä£º{dede:global.cfg_mail/} </p>
+    <div class="tianqi">
+      <iframe width="280" scrolling="no" height="22" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=1&icon=1&wind=0&num=1"></iframe>
+    </div>
+  </div>
+  <div class="search_wrap clearfix">
+    <form action="/plus/search.php" name="formsearch">
+      <input type="hidden" name="kwtype" value="0">
+      <input class="search_text spr_0 fl" type="text" name="q" value="ÇëÊäÈë¹Ø¼ü´Ê" onblur="if (this.value ==&#39;&#39;){this.value=this.defaultValue}" onclick="if(this.value==&#39;ÇëÊäÈë¹Ø¼ü´Ê&#39;)this.value=&#39;&#39;">
+      <input class="search_btn fl" type="submit" name="submit" value="ËÑ Ë÷" border="0">
+    </form>
+  </div>
+</div>
+<div class="navwrap">
+  <div class="nav">
+    <p><a href="/" {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='cur'":@me="";{/dede:field}>ÍøÕ¾Ê×Ò³</a> {dede:channel row='10' type='top' currentstyle="<a href='~typelink~' class='cur'>~typename~</a>"} <a href="[field:typelink/]" title="[field:typename function='substr(@me,0,12)'/]" >[field:typename function='substr(@me,0,12)'/]</a> {/dede:channel} </p>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<TITLE>{dede:field.seotitle/}_{dede:global.cfg_webname/}</TITLE>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/style/css/style.css" />
+<script type="text/javascript" src="/style/js/jquery.1.5.js"></script>
+<script type="text/javascript">
+    var mobileUrl="{dede:global.cfg_wap/}",
+        mobile = (/mmp|symbian|smartphone|midp|wap|phone|xoom|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        window.location = mobileUrl;
+    }
+</script>
+<SCRIPT language=javascript> 
+<!-- 
+window.onerror=function(){return true;} 
+// --> 
+</SCRIPT>
+<!--[if IE 6]><script src="/style/js/iepng.js" type="text/javascript"></script><script type="text/javascript">EvPNG.fix('div, ul, img, li, input');</script><![endif]-->
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="list_tu_page w">
+	<div class="g_pos clearfix">
+		<div class="site fl fc_999">当前位置：{dede:field name='position'/}</div>
+	</div>
+	<div class="w680 fl">
+		<div class="main g_pics">
+			{dede:list pagesize='20' titlelen='30'}
+				<a class="item fl" href="[field:arcurl/]" title="[field:fulltitle/]"><img class="lazy" src="[field:litpic/]"  height="188" width="158" alt="[field:fulltitle/]" /><span class="t hidtit_2" title="[field:fulltitle/]">[field:title/]</span></a>
+			{/dede:list}
+		</div>
+        <div class="clear"></div>
+		<div class="g_pages">
+		{dede:pagelist listitem="pre,next,pageno" listsize="5"/}
+		</div>
+	</div>
+	 {dede:include filename="right.htm"/}
+</div>
+
+{dede:include filename="foot.htm"/}
+ 
+</body>
+</html>

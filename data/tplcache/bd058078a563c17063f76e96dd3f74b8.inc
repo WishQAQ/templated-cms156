@@ -1,0 +1,1 @@
+<a class="top_img item fl w340" href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" height="222" width="340" alt="[field:fulltitle/]" /><span class="t hidtit_2 fs_18 ftc fa_yhei" title="[field:fulltitle/]">[field:title/]</span></a>

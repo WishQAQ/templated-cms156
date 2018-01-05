@@ -1,0 +1,6 @@
+INSERT INTO `dede_member_tj` VALUES('9','1','0','0','1','3','0','0','0','0','0','0');
+INSERT INTO `dede_member_tj` VALUES('2','8','0','0','20','135','2','0','0','0','0','0');
+INSERT INTO `dede_member_tj` VALUES('4','0','0','0','7','0','4','0','0','0','0','0');
+INSERT INTO `dede_member_tj` VALUES('6','0','0','0','9','0','0','0','0','0','0','0');
+INSERT INTO `dede_member_tj` VALUES('7','1','0','0','23','0','0','0','0','0','0','0');
+INSERT INTO `dede_member_tj` VALUES('8','1','0','0','1','48','0','0','0','0','0','0');
